@@ -1,0 +1,118 @@
+body {
+    overflow-x: hidden;
+}
+
+.email_textArea textarea {
+    padding-bottom: 4rem;
+}
+
+.email_textArea {
+    position: relative;
+}
+
+.select_template {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+}
+
+/* // =>EmailTemplate Css */
+.emailTemplateModal {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: transparent;
+    border: 1px solid rgb(216, 214, 214);
+    color: #000;
+}
+
+.emailTemplateModal li {
+    position: relative;
+}
+
+.emailTemplateModal li a {
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.overflowHidden {
+    height: 200px;
+    overflow: auto;
+}
+
+.emailTemplateModal li ul {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    line-height: normal;
+    background: #fff;
+    width: 100%;
+    color: #000;
+}
+
+.emailTemplateModal li ul li a {
+    text-align: left;
+    color: #000;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+/* .emailTemplateModal li ul li a:hover {
+    background-color: ba;
+    color: #000;
+} */
+
+.emailTemplateModal li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+.ello {
+    height: 200px;
+    overflow: auto;
+}
+
+.ello::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.ello::-webkit-scrollbar-track {
+    padding: 1px;
+    background: white;
+    /* color of the tracking area */
+}
+
+.ello::-webkit-scrollbar-thumb {
+    background-color: gray;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 1px solid black;
+    /* creates padding around scroll thumb */
+}
+
+/* .emailTemplateModal ul li:hover>a {
+    background-color: #fff;
+    color: #000 !important;
+} */
+
+.emailTemplateModal li:hover>ul {
+    display: block;
+}
+
+.emailTemplateModal li {
+    cursor: pointer;
+}
+.active{
+    background-color: #fff!important;
+}
